@@ -1,0 +1,14 @@
+1. UML Diagram Converter
+	1.1 Diagram 
+		1.1.1 Add Classes 
+		1.1.2 Add Attributes 
+		1.1.3 Add Functions 
+		1.1.4 Define Relationships
+	1.2 Storage
+		1.2.1 Keep track of previous UML Diagrams 
+		1.2.2 Edit previous UML Diagrams  
+	1.3 Converter
+		1.3.1 Provide downloadable code file for the specific UML Diagram
+		
+	
+
