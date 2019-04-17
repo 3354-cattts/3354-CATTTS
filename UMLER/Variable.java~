@@ -1,0 +1,35 @@
+package UMLER;
+
+public class Variable extends Attribute{
+    // Members
+    public String data_type;
+    public String initial_value;
+    // Constructors
+    public Variable(String typ, String nm){
+	Variable("", typ, nm, "");
+    }
+    public Variable(String scp, String typ, String nm){
+	Variable(scp, typ, nm, "");
+    }
+    public Variable(String typ, String nm, String value){
+	Variable("", type, nm, value);
+    }
+    public Variable(String scp, String typ, String nm, String value){
+	super(scp, nm);
+	data_type = typ;
+	initial_value = value;
+    }
+    public String java(){
+	if(scope.equals("")){//there is no specified scope
+	    if(value.equals(""))
+		return data_type+" "+type+";";
+	    else
+		return data_type+" "+type+" = "+value+";";
+	}else{			
+	    if(value.equals("")) // there is no specified value
+		return scope+" "+data_type+" "+type+";";
+	    else
+		return scope+" "+data_type+" "+type+" = "+value+";";
+ 	}
+    }
+}

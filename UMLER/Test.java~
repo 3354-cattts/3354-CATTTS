@@ -1,0 +1,10 @@
+package UMLER;
+
+public class Test{
+    public static void main(String[] args){
+	Variable var = new Variable("private", "int", "var","15");
+	System.out.println("VAR: "+var.java());
+	Method meth = new Method("public static", "void", "main",{new Variable("String[]","args")});
+	System.out.println("Var: "+meth.java());
+    }
+}

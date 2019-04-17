@@ -1,0 +1,13 @@
+package UMLER;
+
+public class Attributes{
+    // Members
+    public String scope;
+    public String name;
+    // Constructor
+    public Attributes(String scp, String nm){
+	scope = scp;
+	name = name;
+    }
+    
+}
