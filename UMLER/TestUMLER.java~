@@ -1,0 +1,40 @@
+package UMLER;
+import org.junit.Test;
+import static org.junit.Assert.assertEquals;
+
+public class TestUMLER{
+    public static void main(String[] args){
+	Class muffin = new Class("public",
+				 false,
+				 "Muffin",
+				 new String[]{"Pastery"},
+				 new String[]{"Edible","Bakeable"},
+				 new Variable[]{new Variable("private", "double", "flour"),
+						new Variable("private", "double", "sugar"),
+						new Variable("double", "water")},
+				 new Method[]{new Method("public","","Muffin", new Variable[]{new Variable("double", "flr"),
+											    new Variable("double", "sgr"),
+											    new Variable("double", "wtr")}),
+					      new Method("public", "Pastery", "bake", new Variable[]{}),
+					      new Method("public", "void", "multiply",new Variable[]{new Variable("double", "multiplier")})});
+	//	System.out.println(muffin.java());
+
+    }
+    @Test
+    public void testVar(){
+	Variable var1 = new Variable("double", "num");
+	Variable var2 = new Variable("public","Integer","time");
+	Variable var3 = new Variable("public static final", "double", "PI","3.1495");
+	assertEquals(var1.java(),"double num;");
+	assertEquals(var2.java(),"public Integer time;");
+	assertEquals(var3.java(),"public static final double PI = 3.1495;");	    
+    }
+    
+    public void testMeth(){
+	
+    }
+
+    public void testClass(){
+	
+    }
+}
